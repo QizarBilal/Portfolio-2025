@@ -1,6 +1,6 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
-import { ExternalLink, Github, Code, Brain, Globe, Smartphone } from 'lucide-react';
+import { ExternalLink, Github, Code, Brain, Globe} from 'lucide-react';
 
 export const Projects = () => {
   const ref = useRef(null);
