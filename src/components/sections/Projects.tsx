@@ -6,7 +6,6 @@ export const Projects = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const [activeCategory, setActiveCategory] = useState('all');
-  const [hoveredProject, setHoveredProject] = useState<string | null>(null);
 
   const categories = [
     { id: 'all', name: 'All Projects', icon: Globe, count: 4 },
@@ -200,8 +199,6 @@ export const Projects = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               layout
               whileHover={{ y: -8 }}
-              onMouseEnter={() => setHoveredProject(project.id)}
-              onMouseLeave={() => setHoveredProject(null)}
             >
               {/* Glassmorphism Card Effect */}
               <div className="relative">
