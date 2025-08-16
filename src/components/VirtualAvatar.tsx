@@ -28,7 +28,7 @@ export const VirtualAvatar = () => {
   useEffect(() => {
     if (isOpen && messages.length === 0) {
       setTimeout(() => {
-        addBotMessage("Hi there! 👋 I'm Mohammed Qizar Bilal's virtual assistant. Feel free to ask me anything about my skills, projects, or experience!");
+        addBotMessage("Hi there! 👋 I'm Mohammed Qizar Bilal. Feel free to ask me anything about my skills, projects, or experience!");
       }, 500);
     }
   }, [isOpen, messages.length]);
@@ -90,7 +90,7 @@ export const VirtualAvatar = () => {
     }
     
     if (input.includes('hello') || input.includes('hi') || input.includes('hey')) {
-      return "Hello! Great to meet you! 😊 I'm Mohammed Qizar Bilal's virtual assistant. What would you like to know about my background, projects, or skills?";
+      return "Hello! Great to meet you! 😊 I'm Mohammed Qizar Bilal. What would you like to know about my background, projects, or skills?";
     }
     
     if (input.includes('thank') || input.includes('thanks')) {
@@ -184,7 +184,7 @@ export const VirtualAvatar = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold">Mohammed Qizar Bilal</h3>
-                    <p className="text-sm opacity-90">Virtual Assistant</p>
+                    <p className="text-sm opacity-90">Virtual Me</p>
                   </div>
                 </div>
                 <button
